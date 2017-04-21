@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  ArtsVision
-//
-//  Created by TsuyoshiTonobe on 2017/04/20.
-//  Copyright © 2017年 TsuyoshiTonobe. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain
