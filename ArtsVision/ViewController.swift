@@ -144,18 +144,20 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
     }
     
     func setButton() {
-        // UIボタンを作成
+        // UIボタンを作成.
         myButton.backgroundColor = UIColor.red
         myButton.layer.masksToBounds = true
         myButton.setTitle("Classify", for: .normal)
         myButton.layer.cornerRadius = 20.0
-        myButton.layer.position = CGPoint(x: self.view.bounds.width/2, y: self.view.bounds.height - 50)
-        myButton.addTarget(self, action: #selector(onClickMyButton),
-                           for: .touchUpInside)
+        myButton.layer.position = CGPoint(x: self.view.bounds.width/2, y:self.view.bounds.height-50)
+        myButton.addTarget(self, action: #selector(onClickMyButton), for: .touchUpInside)
         
-        //UIボタンをViewに追加
+        // UIボタンをViewに追加.
         self.view.addSubview(myButton);
+        
+        
     }
+
     
     func getArtInfo(number: Int) -> (title: String, name: String) {
         switch number {
@@ -186,7 +188,8 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
     
     }
     
-    //ボタンイベント
+
+    // ボタンイベント
     func onClickMyButton(sender: UIButton) {
         var input: Tensor
         var resizeImage: UIImage
@@ -195,32 +198,39 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
             
             resizeImage = (image?.ResizeUIImage(width: 56, height: 56))!
             
+            print(resizeImage)
+            
             let cgImage = image?.cgImage!
             var pixels = [UInt8](repeating: 0, count: inputSize * inputSize * 4)
             let bitmapInfo = CGBitmapInfo(rawValue: (CGBitmapInfo.byteOrder32Big.rawValue | CGImageAlphaInfo.premultipliedLast.rawValue))
             let bitsPerComponent = 8
             let colorSpace = CGColorSpaceCreateDeviceRGB()
             
-            let context2 = CGContext(data: &pixels, width: inputSize, height: inputSize, bitsPerComponent:
-                bitsPerComponent, bytesPerRow: inputSize * 4, space: colorSpace, bitmapInfo: bitmapInfo.rawValue);
+            let context2 = CGContext(data: &pixels, width: inputSize, height: inputSize, bitsPerComponent: bitsPerComponent, bytesPerRow: inputSize * 4, space: colorSpace, bitmapInfo: bitmapInfo.rawValue);
             
             let rect = CGRect(x: 0.0, y: 0.0, width: CGFloat(inputSize), height: CGFloat(inputSize))
             context2?.clear(rect)
             context2?.draw(cgImage!, in: rect)
             
-            let rgb = pixels.enumerated().filter { $0.0 % 3 != 3 }.map { Float($0.1) / 255.0 }
-
-            input = Tensor(shape: [Dimension(inputSize), Dimension(inputSize),
-                                   Dimension(3)], elements: rgb)
+            let rgb = pixels.enumerated().filter { $0.0 % 4 != 3 }.map { Float($0.1) / 255.0 }
+            
+            input = Tensor(shape: [Dimension(inputSize), Dimension(inputSize), Dimension(3)], elements: rgb)
+            
+            
         }
         
         let estimatedLabel = classifier.classify(x_image: input)
+        print(estimatedLabel)
+        
+        
         
         var artInfo = getArtInfo(number: estimatedLabel)
         
-        let alert = UIAlertController(title: artInfo.title, message: artInfo.name, preferredStyle:
-            UIAlertControllerStyle.alert)
+        let alert = UIAlertController(title: artInfo.title, message: artInfo.name, preferredStyle: UIAlertControllerStyle.alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default))
+        
+        self.present(alert, animated: true, completion: nil)
+        
         
     }
 
