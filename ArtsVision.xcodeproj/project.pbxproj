@@ -13,6 +13,9 @@
 		B10F58751EA868FA00D84E25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B10F58741EA868FA00D84E25 /* Assets.xcassets */; };
 		B10F58781EA868FA00D84E25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B10F58761EA868FA00D84E25 /* LaunchScreen.storyboard */; };
 		B10F58801EA8A95900D84E25 /* CameraUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10F587F1EA8A95900D84E25 /* CameraUtil.swift */; };
+		B10F58821EA9C7D700D84E25 /* UIImage+resize.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10F58811EA9C7D700D84E25 /* UIImage+resize.swift */; };
+		B10F58841EA9FE8100D84E25 /* Classifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10F58831EA9FE8100D84E25 /* Classifier.swift */; };
+		B12960A41EAB1D2500478D46 /* TFDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12960A31EAB1D2500478D46 /* TFDetector.swift */; };
 		B3F1F7FABB602F9089FBECA1 /* Pods_ArtsVision.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF405578912DCFFF30254219 /* Pods_ArtsVision.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +30,9 @@
 		B10F58771EA868FA00D84E25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B10F58791EA868FA00D84E25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B10F587F1EA8A95900D84E25 /* CameraUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraUtil.swift; sourceTree = "<group>"; };
+		B10F58811EA9C7D700D84E25 /* UIImage+resize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+resize.swift"; sourceTree = "<group>"; };
+		B10F58831EA9FE8100D84E25 /* Classifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Classifier.swift; sourceTree = "<group>"; };
+		B12960A31EAB1D2500478D46 /* TFDetector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TFDetector.swift; sourceTree = "<group>"; };
 		CF405578912DCFFF30254219 /* Pods_ArtsVision.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArtsVision.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -83,6 +89,9 @@
 				B10F586D1EA868FA00D84E25 /* AppDelegate.swift */,
 				B10F586F1EA868FA00D84E25 /* ViewController.swift */,
 				B10F587F1EA8A95900D84E25 /* CameraUtil.swift */,
+				B10F58831EA9FE8100D84E25 /* Classifier.swift */,
+				B10F58811EA9C7D700D84E25 /* UIImage+resize.swift */,
+				B12960A31EAB1D2500478D46 /* TFDetector.swift */,
 				B10F58711EA868FA00D84E25 /* Main.storyboard */,
 				B10F58741EA868FA00D84E25 /* Assets.xcassets */,
 				B10F58761EA868FA00D84E25 /* LaunchScreen.storyboard */,
@@ -215,7 +224,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B10F58841EA9FE8100D84E25 /* Classifier.swift in Sources */,
 				B10F58701EA868FA00D84E25 /* ViewController.swift in Sources */,
+				B10F58821EA9C7D700D84E25 /* UIImage+resize.swift in Sources */,
+				B12960A41EAB1D2500478D46 /* TFDetector.swift in Sources */,
 				B10F586E1EA868FA00D84E25 /* AppDelegate.swift in Sources */,
 				B10F58801EA8A95900D84E25 /* CameraUtil.swift in Sources */,
 			);
