@@ -39,7 +39,7 @@ extension Classifier {
         W_conv1 = Tensor(shape: [3, 3, 3, 32], elements: loadFloatArray(path, file: "W_conv1"))
         b_conv1 = Tensor(shape: [32], elements: loadFloatArray(path, file: "b_conv1"))
         
-        W_conv2 = Tensor(shape: [3, 3, 3, 64], elements: loadFloatArray(path, file: "W_conv2"))
+        W_conv2 = Tensor(shape: [3, 3, 32, 64], elements: loadFloatArray(path, file: "W_conv2"))
         b_conv2 = Tensor(shape: [64], elements: loadFloatArray(path, file: "b_conv2"))
         
         W_conv3 = Tensor(shape: [3, 3, 64, 128], elements: loadFloatArray(path, file: "W_conv3"))

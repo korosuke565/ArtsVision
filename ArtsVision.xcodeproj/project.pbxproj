@@ -16,6 +16,16 @@
 		B10F58821EA9C7D700D84E25 /* UIImage+resize.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10F58811EA9C7D700D84E25 /* UIImage+resize.swift */; };
 		B10F58841EA9FE8100D84E25 /* Classifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10F58831EA9FE8100D84E25 /* Classifier.swift */; };
 		B12960A41EAB1D2500478D46 /* TFDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12960A31EAB1D2500478D46 /* TFDetector.swift */; };
+		B12960B01EAB1EFE00478D46 /* b_conv1 in Resources */ = {isa = PBXBuildFile; fileRef = B12960A61EAB1EFE00478D46 /* b_conv1 */; };
+		B12960B11EAB1EFE00478D46 /* b_conv2 in Resources */ = {isa = PBXBuildFile; fileRef = B12960A71EAB1EFE00478D46 /* b_conv2 */; };
+		B12960B21EAB1EFE00478D46 /* b_conv3 in Resources */ = {isa = PBXBuildFile; fileRef = B12960A81EAB1EFE00478D46 /* b_conv3 */; };
+		B12960B31EAB1EFE00478D46 /* b_fc1 in Resources */ = {isa = PBXBuildFile; fileRef = B12960A91EAB1EFE00478D46 /* b_fc1 */; };
+		B12960B41EAB1EFE00478D46 /* b_fc2 in Resources */ = {isa = PBXBuildFile; fileRef = B12960AA1EAB1EFE00478D46 /* b_fc2 */; };
+		B12960B51EAB1EFE00478D46 /* W_conv1 in Resources */ = {isa = PBXBuildFile; fileRef = B12960AB1EAB1EFE00478D46 /* W_conv1 */; };
+		B12960B61EAB1EFE00478D46 /* W_conv2 in Resources */ = {isa = PBXBuildFile; fileRef = B12960AC1EAB1EFE00478D46 /* W_conv2 */; };
+		B12960B71EAB1EFE00478D46 /* W_conv3 in Resources */ = {isa = PBXBuildFile; fileRef = B12960AD1EAB1EFE00478D46 /* W_conv3 */; };
+		B12960B81EAB1EFE00478D46 /* W_fc1 in Resources */ = {isa = PBXBuildFile; fileRef = B12960AE1EAB1EFE00478D46 /* W_fc1 */; };
+		B12960B91EAB1EFE00478D46 /* W_fc2 in Resources */ = {isa = PBXBuildFile; fileRef = B12960AF1EAB1EFE00478D46 /* W_fc2 */; };
 		B3F1F7FABB602F9089FBECA1 /* Pods_ArtsVision.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF405578912DCFFF30254219 /* Pods_ArtsVision.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +43,16 @@
 		B10F58811EA9C7D700D84E25 /* UIImage+resize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+resize.swift"; sourceTree = "<group>"; };
 		B10F58831EA9FE8100D84E25 /* Classifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Classifier.swift; sourceTree = "<group>"; };
 		B12960A31EAB1D2500478D46 /* TFDetector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TFDetector.swift; sourceTree = "<group>"; };
+		B12960A61EAB1EFE00478D46 /* b_conv1 */ = {isa = PBXFileReference; lastKnownFileType = file; path = b_conv1; sourceTree = "<group>"; };
+		B12960A71EAB1EFE00478D46 /* b_conv2 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = b_conv2; sourceTree = "<group>"; };
+		B12960A81EAB1EFE00478D46 /* b_conv3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = b_conv3; sourceTree = "<group>"; };
+		B12960A91EAB1EFE00478D46 /* b_fc1 */ = {isa = PBXFileReference; lastKnownFileType = file; path = b_fc1; sourceTree = "<group>"; };
+		B12960AA1EAB1EFE00478D46 /* b_fc2 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = b_fc2; sourceTree = "<group>"; };
+		B12960AB1EAB1EFE00478D46 /* W_conv1 */ = {isa = PBXFileReference; lastKnownFileType = file; path = W_conv1; sourceTree = "<group>"; };
+		B12960AC1EAB1EFE00478D46 /* W_conv2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = W_conv2; sourceTree = "<group>"; };
+		B12960AD1EAB1EFE00478D46 /* W_conv3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = W_conv3; sourceTree = "<group>"; };
+		B12960AE1EAB1EFE00478D46 /* W_fc1 */ = {isa = PBXFileReference; lastKnownFileType = file; path = W_fc1; sourceTree = "<group>"; };
+		B12960AF1EAB1EFE00478D46 /* W_fc2 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = W_fc2; sourceTree = "<group>"; };
 		CF405578912DCFFF30254219 /* Pods_ArtsVision.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArtsVision.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -86,6 +106,7 @@
 		B10F586C1EA868FA00D84E25 /* ArtsVision */ = {
 			isa = PBXGroup;
 			children = (
+				B12960A51EAB1EFE00478D46 /* Models */,
 				B10F586D1EA868FA00D84E25 /* AppDelegate.swift */,
 				B10F586F1EA868FA00D84E25 /* ViewController.swift */,
 				B10F587F1EA8A95900D84E25 /* CameraUtil.swift */,
@@ -98,6 +119,23 @@
 				B10F58791EA868FA00D84E25 /* Info.plist */,
 			);
 			path = ArtsVision;
+			sourceTree = "<group>";
+		};
+		B12960A51EAB1EFE00478D46 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B12960A61EAB1EFE00478D46 /* b_conv1 */,
+				B12960A71EAB1EFE00478D46 /* b_conv2 */,
+				B12960A81EAB1EFE00478D46 /* b_conv3 */,
+				B12960A91EAB1EFE00478D46 /* b_fc1 */,
+				B12960AA1EAB1EFE00478D46 /* b_fc2 */,
+				B12960AB1EAB1EFE00478D46 /* W_conv1 */,
+				B12960AC1EAB1EFE00478D46 /* W_conv2 */,
+				B12960AD1EAB1EFE00478D46 /* W_conv3 */,
+				B12960AE1EAB1EFE00478D46 /* W_fc1 */,
+				B12960AF1EAB1EFE00478D46 /* W_fc2 */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,9 +201,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B12960B51EAB1EFE00478D46 /* W_conv1 in Resources */,
+				B12960B11EAB1EFE00478D46 /* b_conv2 in Resources */,
+				B12960B91EAB1EFE00478D46 /* W_fc2 in Resources */,
+				B12960B41EAB1EFE00478D46 /* b_fc2 in Resources */,
+				B12960B71EAB1EFE00478D46 /* W_conv3 in Resources */,
 				B10F58781EA868FA00D84E25 /* LaunchScreen.storyboard in Resources */,
 				B10F58751EA868FA00D84E25 /* Assets.xcassets in Resources */,
+				B12960B31EAB1EFE00478D46 /* b_fc1 in Resources */,
+				B12960B21EAB1EFE00478D46 /* b_conv3 in Resources */,
 				B10F58731EA868FA00D84E25 /* Main.storyboard in Resources */,
+				B12960B81EAB1EFE00478D46 /* W_fc1 in Resources */,
+				B12960B01EAB1EFE00478D46 /* b_conv1 in Resources */,
+				B12960B61EAB1EFE00478D46 /* W_conv2 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
