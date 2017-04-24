@@ -2,6 +2,10 @@
 
 ArtsVision classifies 10 artworks using machine-learning.
 
+## Sample
+<img src="https://i.gyazo.com/a3b83a7cf600ede6d871035351e2e863.png" width="200">
+
+
 ## Description
 
 Classified artworks are as follows.
