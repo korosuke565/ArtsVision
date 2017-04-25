@@ -3,7 +3,9 @@
 ArtsVision classifies 10 artworks using machine-learning.
 
 ## Sample
-![sample](https://github.com/korosuke565/ArtsVision/blob/master/media/sample.gif)
+<!-- ![sample](https://github.com/korosuke565/ArtsVision/blob/master/media/sample.gif) -->
+
+<img src="https://github.com/korosuke565/ArtsVision/blob/master/media/sample.gif" width="200">
 
 
 
